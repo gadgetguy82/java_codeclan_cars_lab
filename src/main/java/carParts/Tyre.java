@@ -1,13 +1,15 @@
 package carParts;
 
 public class Tyre {
-  private int size, pressure;
+  private int size, pressure, maxPressure, tread;
   private String type;
 
-  public Tyre(int size, String type, int pressure) {
+  public Tyre(int size, String type, int pressure, int maxPressure, int tread) {
     this.size = size;
     this.type = type;
     this.pressure = pressure;
+    this.maxPressure = maxPressure;
+    this.tread = tread;
   }
 
   public int getSize() {
@@ -20,5 +22,15 @@ public class Tyre {
 
   public int getPressure() {
     return this.pressure;
+  }
+
+  public void inflate() {
+    if (pressure < maxPressure) {
+      this.pressure = maxPressure;
+    }
+  }
+
+  public int checkTread() {
+    return this.tread;
   }
 }

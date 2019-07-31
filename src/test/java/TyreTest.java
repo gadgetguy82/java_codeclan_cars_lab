@@ -9,7 +9,7 @@ public class TyreTest {
 
   @Before
   public void setUp() {
-    tyre = new Tyre(16, "Snow", 32);
+    tyre = new Tyre(16, "Snow", 30, 35, 5);
   }
 
   @Test
@@ -24,12 +24,17 @@ public class TyreTest {
 
   @Test
   public void hasPressure() {
-    assertEquals(32, tyre.getPressure());
+    assertEquals(30, tyre.getPressure());
   }
 
   @Test
   public void canInflate() {
     tyre.inflate();
-    assertEquals();
+    assertEquals(35, tyre.getPressure());
+  }
+
+  @Test
+  public void checkTread() {
+    assertEquals(5, tyre.checkTread());
   }
 }
