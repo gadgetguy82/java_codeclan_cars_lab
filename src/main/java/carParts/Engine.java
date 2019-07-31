@@ -37,6 +37,10 @@ public class Engine {
     this.running = true;
   }
 
+  public void stop() {
+    this.running = false;
+  }
+
   public Boolean checkRunning() {
     return running;
   }
