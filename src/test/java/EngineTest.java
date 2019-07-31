@@ -43,7 +43,7 @@ public class EngineTest {
   public void engineStartsOff(){
     assertEquals(false, engine.checkRunning());
   }
-  
+
   @Test
   public void canGearUp(){
     engine.changeGear(Gears.FIRST);
