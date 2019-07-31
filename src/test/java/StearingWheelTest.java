@@ -34,5 +34,9 @@ public class StearingWheelTest {
     public void hasMusicControlsFalse(){
         assertEquals(false, stearingWheel1.getMusicControls());
     }
+    @Test
+    public void canTuneRadio(){
+        assertEquals("You tuned the radio! to Fire in the booth!", stearingWheel.tuneRadio("Fire in the booth"));
+    }
 
 }

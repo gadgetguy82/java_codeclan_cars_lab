@@ -22,5 +22,8 @@ public class StearingWheel {
     public Boolean getMusicControls() {
         return musicControls;
     }
+    public String tuneRadio(String station){
+        return "You tuned the radio! to " + station + "!";
+    }
 }
 
