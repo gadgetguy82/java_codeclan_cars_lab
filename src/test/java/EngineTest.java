@@ -1,4 +1,5 @@
 import carParts.Engine;
+import enums.Gears;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +10,7 @@ public class EngineTest {
 
   @Before
   public void setUp() {
-    engine = new Engine(5.0, "Hybrid", "Diesel");
+    engine = new Engine(5.0, "Hybrid", "Diesel", Gears.NEUTRAL);
   }
 
   @Test
@@ -27,5 +28,22 @@ public class EngineTest {
     assertEquals("Diesel", engine.getFuelType());
   }
 
-  
+  @Test
+  public void hasGear() {
+    assertEquals(Gears.NEUTRAL, engine.getGear());
+  }
+  @Test
+  public void canStart(){
+    engine.start();
+    assertEquals(true, engine.checkRunning());
+  }
+  @Test
+  public void engineStartsOff(){
+    assertEquals(false, engine.checkRunning());
+  }
+  @Test
+  public void canGearUp(){
+    engine.changeGear(Gears.FIRST);
+    assertEquals(Gears.FIRST, engine.getGear());
+  }
 }
