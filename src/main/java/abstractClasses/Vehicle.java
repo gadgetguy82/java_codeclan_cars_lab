@@ -18,6 +18,8 @@ public abstract class Vehicle {
     this.noOfSeats = noOfSeats;
     this.noOfTyres = noOfTyres;
     this.engine = engine;
+    tyres = new ArrayList<Tyre>();
+    seats = new ArrayList<Seat>();
     for (int i = 0; i < noOfTyres; i++) {
       this.tyres.add(tyre);
     }
