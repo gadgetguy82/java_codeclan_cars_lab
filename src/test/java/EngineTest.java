@@ -42,7 +42,7 @@ public class EngineTest {
   @Test
   public void canStop(){
     engine.start();
-    engine.stop()
+    engine.stop();
     assertEquals(false, engine.checkRunning());
   }
 
