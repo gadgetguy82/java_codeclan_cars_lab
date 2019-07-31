@@ -55,10 +55,6 @@ public abstract class Vehicle {
     return seats;
   }
 
-  public Chassis getChassis() {
-    return chassis;
-  }
-
   public SteeringWheel getSteeringWheel() {
     return steeringWheel;
   }
