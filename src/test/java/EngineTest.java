@@ -32,15 +32,18 @@ public class EngineTest {
   public void hasGear() {
     assertEquals(Gears.NEUTRAL, engine.getGear());
   }
+
   @Test
   public void canStart(){
     engine.start();
     assertEquals(true, engine.checkRunning());
   }
+
   @Test
   public void engineStartsOff(){
     assertEquals(false, engine.checkRunning());
   }
+  
   @Test
   public void canGearUp(){
     engine.changeGear(Gears.FIRST);

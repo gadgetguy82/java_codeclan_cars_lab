@@ -5,9 +5,9 @@ public enum Gears {
   NEUTRAL,
   FIRST,
   SECOND,
-  THIRDS,
+  THIRD,
   FOURTH,
   FIFTH,
-  SIXITH,
+  SIXTH,
   REVERSE;
 }
