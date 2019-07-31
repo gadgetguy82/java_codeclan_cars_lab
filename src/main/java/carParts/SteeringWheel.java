@@ -1,11 +1,11 @@
 package carParts;
 
-public class StearingWheel {
+public class SteeringWheel {
 
     private String horn;
     private Boolean paddles, musicControls;
 
-    public StearingWheel(String horn, Boolean paddles, Boolean musicControls) {
+    public SteeringWheel(String horn, Boolean paddles, Boolean musicControls) {
         this.horn = horn;
         this.paddles = paddles;
         this.musicControls = musicControls;
